@@ -21,7 +21,8 @@
 #include <QTabWidget>
 #include <QSplitter>
 #include <QWebEngineView>
-
+#include <QTableWidget>
+#include <QTableWidgetItem>
 /* STL / helpers -----------------------------------------------------*/
 #include <sstream>
 #include <iomanip>
@@ -138,7 +139,7 @@ void TravelAgencyUI::onReadFile()
         QString sum = QString::fromStdString(ag->readFile(fn.toStdString()));
 
         /* IATA – chemin absolu ou voisin du JSON */
-        QString iata = "/media/sf_yohann/PG2/iatacodes.json";
+        QString iata = "/home/feyem-tadaha-wilfred/Bilder/iatacodes.json";
         ag->loadAirports(iata.toStdString());
 
         QMessageBox::information(this,"Succès", sum+"\nCodes IATA chargés.");
@@ -291,7 +292,7 @@ void TravelAgencyUI::fillCoordTable(const TravelPtr &t)
             addRow(tr->getFromStationLatitude(),tr->getFromStationLongitude(),
                    QString::fromStdString(tr->getFrom()),"Gare");
             for(const auto &s : tr->getStopovers())
-                addRow(s.lat,s.lon,QString::fromStdString(s.name),"Stop");
+                // addRow(s.lat,s.lon,QString::fromStdString(s.name),"Stop");
             addRow(tr->getToStationLatitude(),tr->getToStationLongitude(),
                    QString::fromStdString(tr->getTo()),"Gare");
         }
@@ -345,7 +346,7 @@ QString TravelAgencyUI::buildGeoJson(const TravelPtr &t) const
             std::vector<std::array<double,2>> line{
                 {tr->getFromStationLongitude(),tr->getFromStationLatitude()} };
             for(const auto &s : tr->getStopovers())
-                line.push_back({s.lon,s.lat});
+                // line.push_back({s.lon,s.lat});
             line.push_back({tr->getToStationLongitude(),tr->getToStationLatitude()});
             feats.push_back({
                 {"type","Feature"},

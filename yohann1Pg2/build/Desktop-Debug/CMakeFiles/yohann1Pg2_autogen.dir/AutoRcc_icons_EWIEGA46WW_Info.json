@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug/yohann1Pg2_autogen",
+	"CMAKE_BINARY_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2",
+	"CMAKE_SOURCE_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2",
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug/yohann1Pg2_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/car.png.png",
+		"/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/hotel.png.png"
+	],
+	"LOCK_FILE" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug/CMakeFiles/yohann1Pg2_autogen.dir/AutoRcc_icons_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/build/Desktop-Debug/CMakeFiles/yohann1Pg2_autogen.dir/AutoRcc_icons_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/feyem-tadaha-wilfred/Schreibtisch/y/yohann1Pg2/icons.qrc",
+	"VERBOSITY" : 0
+}
